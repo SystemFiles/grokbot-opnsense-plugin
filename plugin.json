@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "opnsense",
+  "version": "0.1.0",
+  "description": "Read and (with explicit confirmation) change an OPNsense firewall through its HTTP API. Zero-dependency stdio MCP server plus a skill.",
+  "author": { "name": "Ben Sykes" },
+  "license": "MIT",
+  "keywords": ["opnsense", "firewall", "router", "mcp"]
+}

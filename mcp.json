@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "opnsense": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./server/index.js"],
+      "cwd": "./",
+      "env": {
+        "OPNSENSE_URL": "${OPNSENSE_URL}",
+        "OPNSENSE_API_KEY": "${OPNSENSE_API_KEY}",
+        "OPNSENSE_API_SECRET": "${OPNSENSE_API_SECRET}",
+        "OPNSENSE_VERIFY_TLS": "${OPNSENSE_VERIFY_TLS}"
+      }
+    }
+  }
+}

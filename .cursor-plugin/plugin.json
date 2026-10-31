@@ -1,0 +1,36 @@
+{
+  "name": "opnsense",
+  "version": "0.1.0",
+  "description": "Read and (with explicit confirmation) change an OPNsense firewall through its HTTP API. Zero-dependency stdio MCP server plus a skill.",
+  "author": { "name": "Ben Sykes" },
+  "license": "MIT",
+  "keywords": ["opnsense", "firewall", "router", "mcp"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "OPNSENSE_URL": {
+        "type": "string",
+        "title": "OPNsense base URL",
+        "description": "Scheme and host only, e.g. https://192.168.1.1 or https://[2001:db8::1]. No /api suffix."
+      },
+      "OPNSENSE_API_KEY": {
+        "type": "string",
+        "title": "API key",
+        "description": "OPNsense API key (System > Access > Users > API keys). Sent as the basic-auth username."
+      },
+      "OPNSENSE_API_SECRET": {
+        "type": "string",
+        "title": "API secret",
+        "description": "OPNsense API secret. Sent as the basic-auth password."
+      },
+      "OPNSENSE_VERIFY_TLS": {
+        "type": "string",
+        "title": "Verify TLS certificate",
+        "description": "\"true\" to verify the firewall's certificate; \"false\" accepts a self-signed cert.",
+        "enum": ["true", "false"],
+        "default": "false"
+      }
+    },
+    "required": ["OPNSENSE_URL", "OPNSENSE_API_KEY", "OPNSENSE_API_SECRET"]
+  }
+}
