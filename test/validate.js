@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Validate manifests against the Agent Plugins 1.0.0 JSON Schemas (fetched live) using ajv via npx.
+// Dev-only: validate manifests against the Agent Plugins 1.0.0 JSON Schemas (fetched live) using ajv via npx. Needs Node + network; the plugin itself does not use Node.
 'use strict';
 const { execFileSync } = require('node:child_process');
 execFileSync('sh', ['-c', `

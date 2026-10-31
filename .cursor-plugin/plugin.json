@@ -1,10 +1,10 @@
 {
   "name": "opnsense",
-  "version": "0.1.0",
-  "description": "Read and (with explicit confirmation) change an OPNsense firewall through its HTTP API. Zero-dependency stdio MCP server plus a skill.",
+  "version": "0.2.0",
+  "description": "Read and (with explicit confirmation) change an OPNsense firewall through its HTTP API. Stdio MCP server in Go (standard library only) plus a skill.",
   "author": { "name": "Ben Sykes" },
   "license": "MIT",
-  "keywords": ["opnsense", "firewall", "router", "mcp"],
+  "keywords": ["opnsense", "firewall", "router", "mcp", "go"],
   "variables": {
     "type": "object",
     "properties": {

@@ -3,8 +3,10 @@
   "mcpServers": {
     "opnsense": {
       "type": "stdio",
-      "command": "node",
-      "args": ["./server/index.js"],
+      "command": "sh",
+      "args": [
+        "./bin/opnsense-mcp"
+      ],
       "cwd": "./",
       "env": {
         "OPNSENSE_URL": "${OPNSENSE_URL}",

@@ -1,5 +1,6 @@
-node_modules/
 .env
 *.pem
 *.key
-test/.certs/
+# raw build outputs; the committed artifacts are the .gz files + SHA256SUMS
+/bin/opnsense-mcp-*
+!/bin/opnsense-mcp-*.gz
